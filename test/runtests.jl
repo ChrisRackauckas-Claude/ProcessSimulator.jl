@@ -6,6 +6,10 @@ using SafeTestsets
     include("base/simple_steady_state.jl")
 end
 
+@safetestset "Media" begin
+    include("media/media_test.jl")
+end
+
 @safetestset "Reactors" begin
     include("reactors/simple_cstr.jl")
 end
